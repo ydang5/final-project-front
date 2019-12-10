@@ -15,3 +15,26 @@ def contact_page(request):
     context = {}
 
     return render(request,'pages/homepage/contact.html',context)
+
+
+# ---- gateway -----
+
+def login_page(request):
+    context = {}
+
+    return render(request,'pages/gateway/login.html',context)
+
+
+def logout_page(request):
+    context = {}
+
+    return render(request,'pages/gateway/logout.html',context)
+
+
+# ---- platform -----
+
+
+def platform_page(request):
+
+    context = {}
+    return render(request,'pages/platform/platform.html',context)

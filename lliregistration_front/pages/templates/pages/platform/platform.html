@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LLI Admin | Home</title>
+</head>
+<body>
+    <script>
+        {% include "pages/platfrom/platform.js" %}
+    </script>
+
+    <h1>LLI Admin Platform</h1>
+
+    <p>Please use the following functions</p>
+
+    <br />
+
+    <br />
+    <h3>Import the Master Sheet for the Month</h3>
+    <form action="/action_page.php">
+      Select files: <input type="file" name="myFile" multiple><br><br>
+      <input type="submit">
+    </form>
+
+    <a href="{% url 'student_list_page' %}">List Student for the Month</a>
+    <a href="{% url 'student_retrieve_page' %}">Retrive Student Detail</a>
+
+
+    <button onclick="onLogoutClick();">Logout</button>
+
+</body>
+</html>
